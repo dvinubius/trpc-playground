@@ -4,10 +4,8 @@ dotenv.config();
 
 console.log(process.env.IS_ADMIN);
 
-export const createTrpcContext = async ({req, res}: CreateExpressContextOptions) => {
+export const createTrpcContext = () => {
   return {
-    req,
-    res,
     isAdmin: process.env.IS_ADMIN === 'true',
   }
 } 

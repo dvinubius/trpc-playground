@@ -15,5 +15,5 @@ export const appRouter = t.router({
   identifyAdmin: adminProcedure.query(req => {
     return req.ctx.admin;
   }),
-  users: usersRouter
+  users: usersRouter,
 })
